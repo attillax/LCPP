@@ -1,0 +1,272 @@
+Chapter 0 - Introduction / Getting Started
+0.1     Introduction to these tutorials
+0.2     Introduction to programming languages
+0.3     Introduction to C/C++
+0.4     Introduction to development
+0.5     Installing an Integrated Development Environment (IDE)
+0.6     Compiling your first program
+0.6a    Build configurations
+0.7     A few common C++ problems
+ 
+Chapter 1 - C++ Basics
+1.1     Structure of a program
+1.2     Comments
+1.3     A first look at variables, initialization, and assignment
+1.3a    A first look at cout, cin, and endl
+1.4     A first look at functions and return values
+1.4a    A first look at function parameters and arguments
+1.4b    Why functions are useful, and how to use them effectively
+1.4c    Keywords and naming identifiers
+1.4d    A first look at local scope
+1.5     A first look at operators
+1.6     Whitespace and basic formatting
+1.7     Forward declarations and definitions
+1.8     Programs with multiple files
+1.8a    Naming conflicts and the std namespace
+1.9     Header files
+1.10    A first look at the preprocessor
+1.10a   Header guards
+1.10b   How to design your first programs
+1.11    Debugging your program (stepping and breakpoints)
+1.11a   Debugging your program (watching variables and the call stack)
+1.12    Chapter 1 comprehensive quiz
+ 
+Chapter 2 - Variables and Fundamental Data Types
+2.1     Fundamental variable definition, initialization, and assignment
+2.2     Void
+2.3     Variable sizes and the sizeof operator
+2.4     Integers
+2.4a    Fixed-width integers
+2.5     Floating point numbers
+2.6     Boolean values and an introduction to if statements
+2.7     Chars
+2.8     Literals
+2.9     Const, constexpr, and symbolic constants
+2.10    Chapter 2 comprehensive quiz
+
+Chapter 3 - Operators
+3.1     Operator precedence and associativity
+3.2     Arithmetic operators
+3.3     Increment/decrement operators, and side effects
+3.4	    Sizeof, comma, and conditional operators
+3.5     Relational operators (comparisons)
+3.6     Logical operators
+3.7     Converting between binary and decimal
+3.8     Bitwise operators
+3.8a    Bit flags and bit masks
+3.x     Chapter 3 comprehensive quiz
+ 
+Chapter 4 - Variable Scope and More Types
+4.1     Blocks (compound statements)
+4.1a    Local variables, scope, and duration
+4.2     Global variables and linkage
+4.2a    Why global variables are evil
+4.3     Static duration variables
+4.3a    Scope, duration, and linkage summary
+4.3b    Namespaces
+4.3c    Using statements
+4.4     Implicit type conversion (coercion)
+4.4a    Explicit type conversion (casting)
+4.4b    An introduction to std::string
+4.5     Enumerated types
+4.5a    Enum classes
+4.6     Typedefs and type aliases
+4.7     Structs
+4.8     The auto keyword
+4.x     Chapter 4 comprehensive quiz
+ 
+Chapter 5 - Control Flow
+5.1     Control flow introduction
+5.2     If statements
+5.3     Switch statements
+5.4     Goto statements
+5.5     While statements
+5.6     Do while statements
+5.7     For statements
+5.8     Break and continue
+5.9     Random number generation
+5.10    std::cin, extraction, and dealing with invalid text input
+5.11    Introduction to testing your code
+5.x     Chapter 5 comprehensive quiz
+
+Chapter 6 - Arrays, Strings, Pointers, and References
+6.1     Arrays (Part I)
+6.2     Arrays (Part II)
+6.3     Arrays and loops
+6.4     Sorting an array using selection sort
+6.5     Multidimensional arrays
+6.6     C-style strings
+6.7     Introduction to pointers
+6.7a    Null pointers
+6.8     Pointers and arrays
+6.8a    Pointer arithmetic and array indexing
+6.8b    C-style string symbolic constants
+6.9     Dynamic memory allocation with new and delete
+6.9a    Dynamically allocating arrays
+6.10    Pointers and const
+6.11    Reference variables
+6.12    Member selection with pointers and references
+6.12a   For each loops
+6.13    Void pointers
+6.14    Pointers to pointers
+6.15    An introduction to std::array
+6.16    An introduction to std::vector
+6.x     Chapter 6 comprehensive quiz
+ 
+Chapter 7 - Functions
+7.1     Function parameters and arguments
+7.2     Passing arguments by value
+7.3     Passing arguments by reference
+7.4     Passing arguments by address
+7.4a    Returning values by value, reference, and address
+7.5     Inline functions
+7.6     Function overloading
+7.7     Default parameters
+7.8     Function Pointers
+7.9     The stack and the heap
+7.10    std::vector capacity and stack behavior
+7.11    Recursion
+7.12    Handling errors (assert, cerr, exit, and exceptions)
+7.13    Command line arguments
+7.14    Ellipsis (and why to avoid them)
+7.x     Chapter 7 comprehensive quiz
+ 
+Chapter 8 - Basic object-oriented programming
+8.1     Welcome to object-oriented programming
+8.2     Classes and class members
+8.3     Public vs private access specifiers
+8.4     Access functions and encapsulation
+8.5     Constructors
+8.5a    Constructor member initializer lists
+8.5b    Non-static member initialization
+8.6     Overlapping and delegating constructors
+8.7     Destructors
+8.8     The hidden “this” pointer
+8.9     Class code and header files
+8.10    Const class objects and member functions
+8.11    Static member variables
+8.12    Static member functions
+8.13    Friend functions and classes
+8.14    Anonymous objects
+8.15    Nested types in classes
+8.x     Chapter 8 comprehensive quiz
+
+Chapter 9 - Operator overloading
+9.1     Introduction to operator overloading
+9.2     Overloading the arithmetic operators using friend functions
+9.2a    Overloading operators using normal functions
+9.3     Overloading the I/O operators
+9.4     Overloading operators using member functions
+9.5     Overloading unary operators +, -, and !
+9.6     Overloading the comparison operators
+9.7     Overloading the increment and decrement operators
+9.8     Overloading the subscript operator
+9.9     Overloading the parenthesis operator
+9.10    Overloading typecasts
+9.11    The copy constructor
+9.12    Copy initialization
+9.13    Converting constructors, explicit, and delete
+9.14    Overloading the assignment operator
+9.15    Shallow vs. deep copying
+9.x     Chapter 9 comprehensive quiz
+ 
+Chapter 10 - An introduction to object relationships
+10.1    Object relationships
+10.2    Composition
+10.3    Aggregation
+10.4    Association
+10.5    Dependencies
+10.6    Container classes
+10.7    std::initializer_list
+10.x    Chapter 10 comprehensive quiz
+ 
+Chapter 11 - Inheritance
+11.1    Introduction to inheritance
+11.2    Basic inheritance in C++
+11.3    Order of construction of derived classes
+11.4    Constructors and initialization of derived classes
+11.5    Inheritance and access specifiers
+11.6    Adding, changing, and hiding members in a derived class
+11.7    Multiple inheritance
+11.x    Chapter 11 comprehensive quiz
+ 
+Chapter 12 - Virtual Functions
+12.1    Pointers and references to the base class of derived objects
+12.2    Virtual functions and polymorphism
+12.2a   The override and final specifiers, and covariant return types
+12.3    Virtual destructors, virtual assignment, and overriding virtualization
+12.4    Early binding and late binding
+12.5    The virtual table
+12.6    Pure virtual functions, abstract base classes, and interface classes
+12.7    Virtual base classes
+12.8    Object slicing
+12.9    Dynamic casting
+12.10   Printing inherited classes using operator<<
+12.x    Chapter 12 comprehensive quiz
+ 
+Chapter 13 - Templates
+13.1    Function templates
+13.2    Function template instances
+13.3    Template classes
+13.4    Template expression parameters
+13.5    Function template specialization
+13.6    Class template specialization
+13.7    Partial template specialization
+13.8    Partial template specialization for pointers
+13.x    Chapter 13 comprehensive quiz
+ 
+Chapter 14 - Exceptions
+14.1    The need for exceptions
+14.2    Basic exception handling
+14.3    Exceptions, functions, and stack unwinding
+14.4    Uncaught exceptions, catch-all handlers, and exception specifiers
+14.5    Exceptions, classes, and inheritance
+14.6    Rethrowing exceptions
+14.7    Function try blocks
+14.8    Exception dangers and downsides
+14.x    Chapter 14 comprehensive quiz
+ 
+Chapter 15 - Move semantics and smart pointers
+15.1    Intro to smart pointers and move semantics
+15.2    R-value references
+15.3    Move constructors and move assignment
+15.4    std::move
+15.5    std::unique_ptr
+15.6    std::shared_ptr
+ 
+Chapter 16 - The Standard Template Library
+16.1    The Standard Template Library (STL)
+16.2    STL containers overview
+16.3    STL iterators overview
+16.4    STL algorithms overview
+ 
+Chapter 17 - std::string
+17.1    std::string and std::wstring
+17.2    std::string construction and destruction
+17.3    std::string length and capacity
+17.4    std::string character access and conversion to C-style arrays
+17.5    std::string assignment and swapping
+17.6    std::string appending
+17.7    std::string inserting
+ 
+Chapter 18 - Input and output (I/O)
+18.1    Input and output (I/O) streams
+18.2    Input with istream
+18.3    Output with ostream and ios
+18.4    Stream classes for strings
+18.5    Stream states and input validation
+18.6    Basic file I/O
+18.7    Random file I/O
+ 
+Appendix A - Miscellaneous Subjects
+A.1     Static and dynamic libraries
+A.2     Using libraries with Visual Studio Express 2005
+A.3     Using libraries with Code::Blocks
+ 
+Appendix B - C++11 (Formerly C++0x)
+B.1     Introduction to C++11
+B.2     Long long, auto, decltype, nullptr, and enum classes
+B.3     Range-based for statements and static_assert
+B.4     Initializer lists and uniform initialization
+B.5     Delegating constructors
+B.6     New virtual function controls (override, final, default, and delete)
