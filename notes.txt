@@ -17,7 +17,7 @@ High-level Language Code -> Interpreter -> CPU -> Results.
 
 0.4     Introduction to development
 General steps:
-Step 1: Define the problem to be solveb
+Step 1: Define the problem to be solved
 Step 2: Design a Solution
 Step 3: Write a program that implements the solution
 Step 4: Compile the program
