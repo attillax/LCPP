@@ -68,8 +68,39 @@ The release configuration is designed to be used when releasing your program to 
  
 Chapter 1 - C++ Basics
 1.1     Structure of a program
+A statement is the smallest independent unit in the language.
+Types of statements:
+- declaration;
+- assignment;
+- output;
+
+An expression is a mathematical entity that evaluates to a value.
+A function is a collection of statements that executes sequentially. Every C++ program must contain a special function called 
+main.
+A library is a collection of precompiled code (e.g. functions) that has been "packaged up" for reuse in many different programs. 
+Libraries provide a common way to extend what your programs can do.
+A preprocessor directive tells the compiler to perform a special task.
+Syntax is the rules that govern how sentences are constructed in a language.
+
+
 1.2     Comments
+A comment is a line (or multiple lines) of text that are inserted into the source code to explain what the code is doing.
+// - singleline
+/* */ - multiline
+
+
 1.3     A first look at variables, initialization, and assignment
+An object is a piece of memory that can be used to store values.
+A variable is an object that has a name.
+A definition is 
+An instantiation is
+An assignment is
+An initialization is
+An uninitialized variable is a variable that has not been assigned.
+An l-value is a value that has an address (in memory).
+An r-value refers to any value that can be assigned to an l-value.
+
+
 1.3a    A first look at cout, cin, and endl
 1.4     A first look at functions and return values
 1.4a    A first look at function parameters and arguments
