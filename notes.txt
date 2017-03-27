@@ -102,7 +102,21 @@ An r-value refers to any value that can be assigned to an l-value.
 
 
 1.3a    A first look at cout, cin, and endl
+std:: - for using functions from C++ Standard Library without using its whole namespace.
+
+
 1.4     A first look at functions and return values
+A function is a reusable sequence of statements designed to do a particular job.
+A function call is an expression that tells the CPU to interrupt the current function and execute another function. call = 
+execution.
+A return type void is indicating that the function does not return a value to the caller. Because it does not return a value, no 
+return statement is needed.
+If a function has a non-void return type, it must return a value of that type (using a return statement).
+When a return statement is reached in a function, the function returns back to the caller immediately at that point.
+A function can only return a single value back to the caller.
+Functions can not be nested (defined inside other functions).
+
+
 1.4a    A first look at function parameters and arguments
 1.4b    Why functions are useful, and how to use them effectively
 1.4c    Keywords and naming identifiers
