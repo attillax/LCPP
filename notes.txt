@@ -118,9 +118,52 @@ Functions can not be nested (defined inside other functions).
 
 
 1.4a    A first look at function parameters and arguments
+A function parameter is a variable used in a function where the value is provided by the caller of the function.
+An argument is a value that is passed from the caller to the function when a function call is made.
+Pass by value is a process when a function is called, all of the parameters of the function are created as variables, and the
+value of each of the arguments is copied into the matching parameter.
+
+
 1.4b    Why functions are useful, and how to use them effectively
+Benefits from usage of a function:
+- Organization.
+- Reusability. 
+- Testing.
+- Extensibility. 
+- Abstraction.
+
+
 1.4c    Keywords and naming identifiers
+84 reserved words (as of C++14):
+alignas ** | char         | do             | goto        | operator           | static           | typeid *
+alignof ** | char16_t **  | double         | if          | or                 | static_assert ** | typename *
+and        | char32_t **  | dunamic_cast * | inline      | or_eq              | static_cast *    | union
+and_eq     | class        | else           | int         | private            | struct           | unsigned
+asm        | compl        | enum           | long        | protected          | switch           | using *
+auto       | const        | explicit *     | mutable *   | public             | template         | virtual
+bitand     | constexpr ** | export *       | namespace * | register           | this             | void
+bitor      | const_cast * | extern         | new         | reinterpret_cast * | thread_local **  | volatile
+bool *     | continue     | false *        | noexcept ** | return             | throw            | wchar_t *
+break      | decltype     | float          | not         | short              | true *           | while
+case       | default      | for            | not_eq      | signed             | try              | xor
+catch 	   | delete       | friend         | nullprt **  | sizeof             | typedef          | xor_eq 
+* These 15 keywords were added in C++98.
+** These 9 keywords were added in C++11.
+
+An identifier is the name of a variable, function, type, or other kind of object. Rules for naming:
+- Can not be a keyword. 
+- Can only be composed of letters (lower or upper case), numbers, and the underscore character.
+- Must begin with a letter (lower or upper case) or an underscore. It can not start with a number.
+- C++ distinguishes between lower and upper case letters. nvalue is different than nValue is different than NVALUE. 
+
+
 1.4d    A first look at local scope
+A variable’s scope determines when a variable can be seen and used during the time it is instantiated. 
+Names used for function parameters or variables declared in a function body are only visible within the function that declares
+them (local scope). Local variables are created at the point of definition, and destroyed when they go out of scope (usually at
+the end of the function).
+
+
 1.5     A first look at operators
 1.6     Whitespace and basic formatting
 1.7     Forward declarations and definitions
