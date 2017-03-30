@@ -165,8 +165,32 @@ the end of the function).
 
 
 1.5     A first look at operators
+An expression is a combination of literals, variables, functions, and operators that evaluates to a value.
+A literal is a fixed value that has been inserted (hardcoded) directly into the source code.
+Operands supply the data that the expression works with.
+Operators tell the expression how to combine one or more operands to produce a new result.
+Types of operators:
+- Unary operators act on one operand.
+- Binary operators act on two operands (known as left and right).
+- Ternary operators act on three operands.
+
+
 1.6     Whitespace and basic formatting
+Whitespace is a term that refers to characters that are used for formatting purposes.
+Tab -> 4 spaces.
+Line length -> 72, 74, 80 characters.
+
+
 1.7     Forward declarations and definitions
+When addressing compile errors in your programs, always resolve the first error produced first.
+A forward declaration allows us to tell the compiler about the existence of an identifier before actually defining the
+identifier.
+A function prototype is a declaration statement called which consists of the function’s return type, name, parameters, but no
+function body (the part between the curly braces).
+A definition actually implements or instantiates (causes memory to be allocated for) the identifier.
+A declaration is a statement that announces an identifier (variable or function name) and its type.
+
+
 1.8     Programs with multiple files
 1.8a    Naming conflicts and the std namespace
 1.9     Header files
