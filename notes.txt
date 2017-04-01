@@ -192,7 +192,19 @@ A declaration is a statement that announces an identifier (variable or function 
 
 
 1.8     Programs with multiple files
+g++ -o <program_name> <source_1>.cpp <source_2>.cpp <source_n>.cpp
+
+
 1.8a    Naming conflicts and the std namespace
+If two identifiers are introduced into the same program in a way that the compiler can’t tell them apart, the compiler or linker
+will produce an error. This error is generally referred to as a naming collision (or naming conflict).
+Most naming collisions occur in two cases:
+1) Two files are added into the same project that have a function (or global variable) with the same name (linker error).
+2) A code file includes a header file that contains an identifier that conflicts with something else (compile error).
+
+When you use an identifier in a namespace, you always have to identify the namespace along with the identifier, e.g. std::cout.
+
+
 1.9     Header files
 1.10    A first look at the preprocessor
 1.10a   Header guards
