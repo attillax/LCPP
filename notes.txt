@@ -206,6 +206,23 @@ When you use an identifier in a namespace, you always have to identify the names
 
 
 1.9     Header files
+A header is a file wich holds declarations for other files to use.
+When you <#include> a file, the entire content of the included file is inserted at the point of inclusion.
+Use angled brackets to include header files that come with the compiler. 
+Use double quotes to include any other header files.
+Each .cpp file should explicitly <#include> all of the header files it needs to compile.
+Use the non .h version of a library if it exists, and access the functionality through the std namespace. If the non .h version
+does not exist, or you are creating your own headers, use the .h version
+Header file best practices:
+- Always include header guards.
+- Do not define variables in header files unless they are constants. Header files should generally only be used for declarations.
+- Do not define functions in header files.
+- Each header file should have a specific job, and be as independent as possible.
+- Give your header files the same name as the source files they’re associated with.
+- Try to minimize the number of other header files you #include in your header files. Only #include what is necessary.
+- Do not #include .cpp files.
+
+
 1.10    A first look at the preprocessor
 1.10a   Header guards
 1.10b   How to design your first programs
