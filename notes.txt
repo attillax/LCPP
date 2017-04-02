@@ -192,8 +192,37 @@ A declaration is a statement that announces an identifier (variable or function 
 
 
 1.8     Programs with multiple files
+g++ -o <program_name> <source_1>.cpp <source_2>.cpp <source_n>.cpp
+
+
 1.8a    Naming conflicts and the std namespace
+If two identifiers are introduced into the same program in a way that the compiler can’t tell them apart, the compiler or linker
+will produce an error. This error is generally referred to as a naming collision (or naming conflict).
+Most naming collisions occur in two cases:
+1) Two files are added into the same project that have a function (or global variable) with the same name (linker error).
+2) A code file includes a header file that contains an identifier that conflicts with something else (compile error).
+
+When you use an identifier in a namespace, you always have to identify the namespace along with the identifier, e.g. std::cout.
+
+
 1.9     Header files
+A header is a file wich holds declarations for other files to use.
+When you <#include> a file, the entire content of the included file is inserted at the point of inclusion.
+Use angled brackets to include header files that come with the compiler. 
+Use double quotes to include any other header files.
+Each .cpp file should explicitly <#include> all of the header files it needs to compile.
+Use the non .h version of a library if it exists, and access the functionality through the std namespace. If the non .h version
+does not exist, or you are creating your own headers, use the .h version
+Header file best practices:
+- Always include header guards.
+- Do not define variables in header files unless they are constants. Header files should generally only be used for declarations.
+- Do not define functions in header files.
+- Each header file should have a specific job, and be as independent as possible.
+- Give your header files the same name as the source files they’re associated with.
+- Try to minimize the number of other header files you #include in your header files. Only #include what is necessary.
+- Do not #include .cpp files.
+
+
 1.10    A first look at the preprocessor
 1.10a   Header guards
 1.10b   How to design your first programs
