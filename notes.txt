@@ -220,10 +220,50 @@ Header file best practices:
 - Each header file should have a specific job, and be as independent as possible.
 - Give your header files the same name as the source files they’re associated with.
 - Try to minimize the number of other header files you #include in your header files. Only #include what is necessary.
-- Do not #include .cpp files.
+- Do not <#include> <.cpp> files.
 
 
 1.10    A first look at the preprocessor
+The preprocessor is perhaps best thought of as a separate program that runs just before the compiler when you compile your
+program. When the preprocessor runs, it simply scans through each code file from top to bottom, looking for directives. All 
+text changes made by the preprocessor happen temporarily in-memory.
+
+Directives are specific instructions that start with a <#> symbol and end with a newline (NOT a semicolon).
+
+When you <#include> a file, the preprocessor copies the contents of the included file into the including file at the point of 
+the <#include> directive. The command has two forms:
+- <#include <filename> > tells the preprocessor to look for the file in a special place defined by the operating system where
+header files for the C++ runtime library are held. You’ll generally use this form when you’re including headers that come with
+the compiler (e.g. that are part of the C++ standard library).
+
+- <#include "filename"> tells the preprocessor to look for the file in directory containing the source file doing the
+<#include>. If it doesn’t find the header file there, it will check any other include paths that you’ve specified as part of
+your compiler/IDE settings. That failing, it will act identically to the angled brackets case. 
+
+The <#define> directive can be used to create a macro. 
+A macro is a rule that defines how an input sequence (e.g. an identifier) is converted into a replacement output sequence 
+(e.g. some text). There are two basic types of macros: 
+- object-like macros;
+- function-like macros.
+
+Function-like macros act like functions, and serve a similar purpose. 
+
+Object-like macros can be defined in one of two ways:
+- <#define identifier>;
+- <#define identifier substitution_text>.
+
+The conditional compilation preprocessor directives allow you to specify under what conditions something will or won’t compile.
+Most common of them are <#ifdef>, <#ifndef>, and <#endif>.
+
+The <#ifdef> preprocessor directive allow the preprocessor to check whether a value has been previously <#define>d. If so, the
+code between the <#ifdef> and corresponding <#endif> is compiled. 
+
+The <#ifndef> is the opposite of <#ifdef>, in that it allows you to check whether a name has NOT been defined yet.
+
+Directives defined in one code file do not have impact on other code files in the same project.
+
+
+
 1.10a   Header guards
 1.10b   How to design your first programs
 1.11    Debugging your program (stepping and breakpoints)
